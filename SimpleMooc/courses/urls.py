@@ -18,7 +18,7 @@ from django.urls import path
 from SimpleMooc.courses import views
 
 app_name = 'courses'
-urlpatterns = {
+urlpatterns = [
     path('', views.index, name='index'),
     path('<int:pk>/', views.details, name='details'),
-}
+]
