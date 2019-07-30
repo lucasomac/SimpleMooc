@@ -1,8 +1,7 @@
-from django.conf.urls import url
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 
 from SimpleMooc.core import views
+
 app_name = 'core'
 urlpatterns = [
     path('', views.home, name='home'),
