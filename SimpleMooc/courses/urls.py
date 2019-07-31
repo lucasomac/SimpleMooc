@@ -20,5 +20,5 @@ from SimpleMooc.courses import views
 app_name = 'courses'
 urlpatterns = [
     path('', views.index, name='index'),
-    path('<int:pk>/', views.details, name='details'),
+    path('<str:slug>/', views.details, name='details'),
 ]
